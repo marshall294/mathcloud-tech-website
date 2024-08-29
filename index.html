@@ -4,64 +4,79 @@
   <link rel="icon" href="logo.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!--Import materialize.css-->
+  <!-- Import Materialize.css -->
   <link rel="stylesheet" href="materialize.min.css" media="screen,projection"/>
   <title>MathCloud-Tech</title>
-  <!-- for-mobile-apps -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="keywords" content="Web Development, Web Design, SEO Services, Math Tutoring, Education" />
-  <script>
-    addEventListener("load", function () {
-      setTimeout(hideURLbar, 0);
-    }, false);
 
-    function hideURLbar() {
-      window.scrollTo(0, 1);
-    }
-  </script>
-
-  <!-- css files -->
+  <!-- CSS Files -->
   <link rel="stylesheet" href="css_slider.css">
   <link rel="stylesheet" href="bootstrap.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="font-awesome.min.css">
-  <!-- //css files -->
 
-  <!-- google fonts -->
+  <!-- Google Fonts -->
   <link href="//fonts.googleapis.com/css?family=Niramit:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext,thai,vietnamese" rel="stylesheet">
-  <!-- //google fonts -->
 
+  <!-- Custom Styles -->
+  <style>
+    nav {
+      background: #0C8241;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .brand-logo img {
+      height: 60px;
+      width: auto;
+      margin-top: -10px;
+    }
+    .nav-wrapper ul li a {
+      font-size: 1.1em;
+      padding: 0 20px;
+      font-weight: 500;
+    }
+    .sidenav-trigger {
+      margin-top: 15px;
+    }
+    .slider .caption {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 
-<body style="overflow-x:none;">
-    <audio autoplay loop>
-        <source src="song.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
+<body>
+  <audio autoplay loop>
+    <source src="song.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
 
-  <nav style="background:#0C8241;" id="home">
-    <div class="nav-wrapper">
+  <nav>
+    <div class="nav-wrapper container">
       <a href="index.html" class="brand-logo">
-        <img src="logo.png" style="width:80px; height:50px; margin-top:-17px;">
+        <img src="logo.png" alt="MathCloud-Tech Logo">
       </a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li class="active"><a href="index.html">Home</a></li>
-        <li class=""><a href="education.html">Education</a></li>
-        <li class=""><a href="development.html">Web Service</a></li>
-        <li class=""><a href="training.html">Training</a></li>
-        <li class=""><a href="contact.html">Contact Us</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="development.html">Web Service</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
   </nav>
 
   <ul class="sidenav" id="mobile-demo">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li class=""><a href="education.html">Education</a></li>
-        <li class=""><a href="development.html">Web Service</a></li>
-        <li class=""><a href="training.html">Training</a></li>
-        <li class=""><a href="contact.html">Contact Us</a></li>
+    <li class="active"><a href="index.html">Home</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="development.html">Web Service</a></li>
+    <li><a href="training.html">Training</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
   </ul>
 
   <div class="slider">
@@ -69,29 +84,29 @@
       <li style="width:100%;">
         <img src="slider1.jpg">
         <div class="caption center-align">
-          <h3 class="black-text" style="font-size:2.5em; font-weight: 500; text-uppercase;">MathCloud-Tech</h3>
-          <h5 class="light white-text text-lighten-3">...Empowering Your Digital Experience...</h5>
+          <h3 class="white-text">MathCloud-Tech</h3>
+          <h5 class="light white-text text-lighten-3">Empowering Your Digital Experience</h5>
         </div>
       </li>
       <li>
         <img src="slider2.webp">
         <div class="caption left-align">
-          <h3 class="orange-text" style="font-size:2.5em; font-weight: 500; text-uppercase;">We Offer Services That Work</h3>
-          <h5 class="black-text text-lighten-3">...Empowering Your Digital Experience...</h5>
+          <h3 class="white-text">We Offer Services That Work</h3>
+          <h5 class="light white-text text-lighten-3">Empowering Your Digital Experience</h5>
         </div>
       </li>
       <li>
         <img src="slider3.jpg">
         <div class="caption right-align">
-          <h3 class="green-text" style="font-size:2.5em; font-weight: 500; text-uppercase;">We Support Your <span class="orange-text darken-3">Web Development</span> Needs</h3>
-          <h5 class="white-text text-lighten-3">...Empowering Your Digital Experience...</h5>
+          <h3 class="white-text">We Support Your Web Development Needs</h3>
+          <h5 class="light white-text text-lighten-3">Empowering Your Digital Experience</h5>
         </div>
       </li>
       <li>
         <img src="slider4.webp">
         <div class="caption center-align">
-          <h3 class="green-text" style="font-size:2.5em;">Flexible Web Solutions <span class="orange-text darken-3">For Your Business</span></h3>
-          <h5 class="light white-text text-lighten-3">...Empowering Your Digital Experience...</h5>
+          <h3 class="white-text">Flexible Web Solutions For Your Business</h3>
+          <h5 class="light white-text text-lighten-3">Empowering Your Digital Experience</h5>
         </div>
       </li>
     </ul>
@@ -102,12 +117,12 @@
       <div class="row bottom_grids text-center mt-lg-5 mt-sm-3">
         <div class="col-md-4 grid1 mb-5" data-aos="zoom-out-right" data-aos-duration="2000">
           <a class="btn-floating btn-large green-text"><i class="material-icons large">healing</i></a>
-          <h3 class="my-3 green-text">Vision:</h3>
+          <h3 class="my-3 green-text">Vision</h3>
           <p>To empower individuals and businesses with top-notch web solutions and educational services.</p>
         </div>
         <div class="col-md-4 grid2 mb-5" data-aos="fade-up" data-aos-duration="3000">
           <a class="btn-floating btn-large green-text"><i class="material-icons large">open_with</i></a>
-          <h3 class="my-3 green-text">Mission:</h3>
+          <h3 class="my-3 green-text">Mission</h3>
           <p>Providing exceptional web development, design, and educational services to enhance the digital presence and knowledge of our clients.</p>
         </div>
         <div class="col-md-4 grid3 mb-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
@@ -119,41 +134,7 @@
     </div>
   </section>
 
-  <section class="advantages pt-lg-5 pt-3">
-    <div class="container pb-lg-5">
-      <div class="row advantages_grids">
-        <div class="col-lg-6" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-          <img src="images/slider3.jpg" alt="" class="img-fluid">
-        </div>
-        <div class="col-lg-6 mt-lg-0 mt-4" data-aos="zoom-in-right" data-aos-duration="2000">
-          <h3 class="mt-3 green-text z-death-2">About MathCloud-Tech</h3>
-          <p class="my-sm-4 my-3">MathCloud-Tech is a premier provider of web development, design, and SEO services. We also offer specialized tutoring for various levels of math education.</p>
-        </div>
-        <div class="row mt-md-5 mt-4 image-grids" data-aos="zoom-in-left" data-aos-duration="3000">
-          <div class="col-lg-3 col-6 grid4 mb-5 text-center">
-            <a class="btn-floating btn-large white-text"><i class="material-icons large">account_balance_wallet</i></a>
-            <h3 class="mt-3 green-text">Web Development</h3>
-            <p>Professional and responsive web development services.</p>
-          </div>
-          <div class="col-lg-3 col-6 grid5 mb-5 text-center" data-aos="zoom-in-up">
-            <a class="btn-floating btn-large white-text text-center"><i class="fa fa-transgender fa-2x"></i></a>
-            <h3 class="mt-3 green-text">Web Design</h3>
-            <p>Innovative and user-friendly web design solutions.</p>
-          </div>
-          <div class="col-lg-3 col-6 grid6 mb-5 text-center" data-aos="zoom-in-down">
-            <a class="btn-floating btn-large white-text text-center"><i class="material-icons">people</i></a>
-            <h3 class="mt-3 green-text">SEO Services</h3>
-            <p>Optimizing your website to rank higher in search engines.</p>
-          </div>
-          <div class="col-lg-3 col-6 grid7 mb-5 text-center" data-aos="zoom-in-right">
-            <a class="btn-floating btn-large white-text text-center"><i class="material-icons">star_half</i></a>
-            <h3 class="mt-3 green-text">Math Tutoring</h3>
-            <p>Expert math tutoring for all levels.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- Additional content can be adjusted as necessary -->
 
   <footer class="page-footer" style="background:#0C8241;">
     <div class="container">
@@ -167,9 +148,10 @@
           <ul>
             <li><a class="white-text" href="mailto:info@mathcloud-tech.online"><i class="material-icons">email</i> info@mathcloud-tech.online</a></li>
             <li><a class="white-text" href="tel:+2348102341648"><i class="material-icons">phone</i> +2348102341648</a></li>
-            <li>
-
-            </li>
+            <li><a class="white-text" href="#"><i class="material-icons">facebook</i> Facebook</a></li>
+            <li><a class="white-text" href="#"><i class="material-icons">twitter</i> Twitter</a></li>
+            <li><a class="white-text" href="#"><i class="material-icons">instagram</i> Instagram</a></li>
+            <li><a class="white-text" href="#"><i class="material-icons">linkedin</i> LinkedIn</a></li>
           </ul>
         </div>
       </div>
@@ -177,13 +159,6 @@
     <div class="footer-copyright">
       <div class="container">
         © 2024 MathCloud-Tech. All rights reserved.
-<ul>
-  <li><a class="grey-text text-lighten-3" href="https://web.facebook.com/profile.php?id=100068970776224"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUVLZhgojk1WrZzKzcY3C66KIPb3wXADaFjTa96DxqG2Oj5w1zkysDTB972ka0BecpI9s&usqp=CAU" alt="Facebook" style="width: 20px; height: 20px;"> Facebook</a></li>
-  <li><a class="grey-text text-lighten-3" href="https://twitter.com"><img src="https://e7.pngegg.com/pngimages/708/311/png-clipart-icon-logo-twitter-logo-twitter-logo-blue-social-media-thumbnail.png" alt="Twitter" style="width: 20px; height: 20px;"> Twitter</a></li>
-  <li><a class="grey-text text-lighten-3" href="https://instagram.com"><img src="https://w7.pngwing.com/pngs/953/528/png-transparent-instagram-icon-logo-desktop-computer-icons-instagram-miscellaneous-text-bing-thumbnail.png" alt="Instagram" style="width: 20px; height: 20px;"> Instagram</a></li>
-  <li><a class="grey-text text-lighten-3" href="https://linkedin.com"><img src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk4Mi1kMy0xMC5wbmc.png" alt="LinkedIn" style="width: 20px; height: 20px;"> LinkedIn</a></li>
-</ul>
-
       </div>
     </div>
   </footer>
@@ -195,12 +170,11 @@
     AOS.init();
     $(document).ready(function(){
       $('.sidenav').sidenav();
-      $('.slider').slider();
+      $('.slider').slider({
+        indicators: true,
+        height: 600
+      });
     });
   </script>
-    <script>
-        const audio = document.querySelector('audio');
-        audio.volume = 0.1; // Set the volume to 10%
-    </script>
 </body>
 </html>
