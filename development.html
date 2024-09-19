@@ -8,6 +8,109 @@
     <meta name="author" content="MathCloud-Tech">
     <title>Website Development - MathCloud-Tech</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #hero {
+            background-color: #f4f4f4;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .service-section {
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Flexbox Container for Services */
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .development-box {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1 1 30%; /* Flex-grow, flex-shrink, and flex-basis */
+            margin: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .development-box h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .development-box p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .development-box:hover {
+            transform: translateY(-10px);
+        }
+
+        @media (max-width: 768px) {
+            .development-box {
+                flex: 1 1 100%;
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,52 +126,65 @@
             </nav>
         </div>
     </header>
+
     <section id="hero">
         <div class="container">
             <h2>Website Development and Design</h2>
             <p>Creating professional websites for schools, businesses, private clients, and more.</p>
         </div>
     </section>
+
     <section id="development-details" class="service-section">
         <div class="container">
             <h2>Our Website Development Services</h2>
             <p>We specialize in creating customized websites to meet the unique needs of our clients. Our services include:</p>
-            <div class="development-box">
-                <h3>School Websites</h3>
-                <p>We design user-friendly, informative, and engaging websites for schools to enhance their online presence.</p>
-            </div>
-            <div class="development-box">
-                <h3>Business Websites</h3>
-                <p>Our business websites are designed to help companies establish a professional online presence and reach their target audience.</p>
-            </div>
-            <div class="development-box">
-                <h3>Private Websites</h3>
-                <p>We create personalized websites for individuals, showcasing their work, hobbies, and personal interests.</p>
-            </div>
-            <div class="development-box">
-                <h3>E-commerce Platforms</h3>
-                <p>Our e-commerce solutions are tailored to help businesses sell their products online effectively.</p>
-            </div>
-            <div class="development-box">
-                <h3>Wedding Web-pages</h3>
-                <p>We design beautiful and interactive wedding web-pages to share your special moments with family and friends.</p>
-            </div>
-            <div class="development-box">
-                <h3>Family Hubs</h3>
-                <p>Our family hubs provide a secure platform for families to share updates, photos, and stay connected.</p>
-            </div>
-            <div class="development-box">
-                <h3>Intranet Solutions</h3>
-                <p>We develop intranet solutions to help organizations streamline their internal communication and collaboration.</p>
+
+            <div class="services-container">
+                <div class="development-box">
+                    <h3>School Websites</h3>
+                    <p>We design user-friendly, informative, and engaging websites for schools to enhance their online presence.</p>
+                </div>
+
+                <div class="development-box">
+                    <h3>Business Websites</h3>
+                    <p>Our business websites are designed to help companies establish a professional online presence and reach their target audience.</p>
+                </div>
+
+                <div class="development-box">
+                    <h3>Private Websites</h3>
+                    <p>We create personalized websites for individuals, showcasing their work, hobbies, and personal interests.</p>
+                </div>
+
+                <div class="development-box">
+                    <h3>E-commerce Platforms</h3>
+                    <p>Our e-commerce solutions are tailored to help businesses sell their products online effectively.</p>
+                </div>
+
+                <div class="development-box">
+                    <h3>Wedding Web-pages</h3>
+                    <p>We design beautiful and interactive wedding web-pages to share your special moments with family and friends.</p>
+                </div>
+
+                <div class="development-box">
+                    <h3>Family Hubs</h3>
+                    <p>Our family hubs provide a secure platform for families to share updates, photos, and stay connected.</p>
+                </div>
+
+                <div class="development-box">
+                    <h3>Intranet Solutions</h3>
+                    <p>We develop intranet solutions to help organizations streamline their internal communication and collaboration.</p>
+                </div>
             </div>
         </div>
     </section>
+
     <footer>
         <div class="container">
             <p>Contact us: info@mathcloud-tech.online | admin@mathcloud-tech.online</p>
             <p>&copy; 2024 MathCloud-Tech. All Rights Reserved.</p>
         </div>
     </footer>
+
     <script src="scripts.js"></script>
 </body>
 </html>
