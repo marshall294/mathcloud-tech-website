@@ -8,6 +8,109 @@
     <meta name="author" content="MathCloud-Tech">
     <title>Training Services - MathCloud-Tech</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #hero {
+            background-color: #f4f4f4;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .service-section {
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Flexbox Layout for Training Services */
+        .training-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .training-box {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1 1 30%;
+            margin: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .training-box h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .training-box p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .training-box:hover {
+            transform: translateY(-10px);
+        }
+
+        @media (max-width: 768px) {
+            .training-box {
+                flex: 1 1 100%;
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,36 +126,45 @@
             </nav>
         </div>
     </header>
+
     <section id="hero">
         <div class="container">
             <h2>Training Services</h2>
             <p>Offering training in educational technology, Google Suite for education, and Google tools.</p>
         </div>
     </section>
+
     <section id="training-details" class="service-section">
         <div class="container">
             <h2>Our Training Services</h2>
             <p>We provide comprehensive training programs to help educators and professionals enhance their skills. Our services include:</p>
-            <div class="training-box">
-                <h3>Educational Technology Training</h3>
-                <p>We offer training on the latest educational technologies to help educators integrate tech into their teaching methods effectively.</p>
-            </div>
-            <div class="training-box">
-                <h3>Google Suite for Education Training</h3>
-                <p>Our training programs cover all aspects of Google Suite for education, helping educators utilize these tools to enhance learning.</p>
-            </div>
-            <div class="training-box">
-                <h3>Google Tools for Education</h3>
-                <p>We provide training on various Google tools, equipping educators with the skills needed to improve their teaching and administrative tasks.</p>
+
+            <div class="training-container">
+                <div class="training-box">
+                    <h3>Educational Technology Training</h3>
+                    <p>We offer training on the latest educational technologies to help educators integrate tech into their teaching methods effectively.</p>
+                </div>
+
+                <div class="training-box">
+                    <h3>Google Suite for Education Training</h3>
+                    <p>Our training programs cover all aspects of Google Suite for education, helping educators utilize these tools to enhance learning.</p>
+                </div>
+
+                <div class="training-box">
+                    <h3>Google Tools for Education</h3>
+                    <p>We provide training on various Google tools, equipping educators with the skills needed to improve their teaching and administrative tasks.</p>
+                </div>
             </div>
         </div>
     </section>
+
     <footer>
         <div class="container">
             <p>Contact us: info@mathcloud-tech.online | admin@mathcloud-tech.online</p>
             <p>&copy; 2024 MathCloud-Tech. All Rights Reserved.</p>
         </div>
     </footer>
+
     <script src="scripts.js"></script>
 </body>
 </html>
