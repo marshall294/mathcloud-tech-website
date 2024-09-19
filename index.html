@@ -79,11 +79,20 @@
     .slides {
       display: flex;
       transition: transform 1s ease;
+      position: relative;
     }
 
     .slide {
       min-width: 100%;
-      position: relative;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 1.5s ease;
+    }
+
+    .slide.active {
+      opacity: 1;
     }
 
     .slide img {
@@ -91,7 +100,6 @@
       height: 60vh;
       object-fit: cover;
       filter: brightness(80%);
-      transition: transform 1s ease;
     }
 
     .caption {
@@ -113,10 +121,6 @@
     .active .caption {
       opacity: 1;
       transform: translate(-50%, 0);
-    }
-
-    .active img {
-      transform: scale(1.1);
     }
 
     /* Slider Navigation Dots */
@@ -312,11 +316,10 @@
   <!-- Footer -->
   <footer>
     <div class="footer-content">
-      <div>
-        <h5>MathCloud-Tech</h5>
-        <p>&copy; 2024 MathCloud-Tech. All rights reserved.</p>
-        <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
-      </div>
+      <h5>Get In Touch</h5>
+      <p>Email: info@mathcloudtech.com | Phone: +123 456 7890</p>
+      <p>&copy; 2024 MathCloud-Tech. All rights reserved.</p>
+      <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
     </div>
   </footer>
 
@@ -326,7 +329,8 @@
     function showSlides() {
       const slides = document.querySelectorAll('.slide');
       const totalSlides = slides.length;
-      slides.forEach((slide, index) => {
+
+      slides.forEach((slide) => {
         slide.style.opacity = '0';
         slide.classList.remove('active');
       });
@@ -334,15 +338,6 @@
       slideIndex = (slideIndex + 1) % totalSlides;
       slides[slideIndex].style.opacity = '1';
       slides[slideIndex].classList.add('active');
-
-      const captions = document.querySelectorAll('.caption');
-      captions.forEach((caption, index) => {
-        caption.style.opacity = '0';
-        caption.classList.remove('active');
-      });
-
-      captions[slideIndex].style.opacity = '1';
-      captions[slideIndex].classList.add('active');
 
       const dots = document.querySelectorAll('.slider-nav span');
       dots.forEach((dot, index) => {
